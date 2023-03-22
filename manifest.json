@@ -9,6 +9,16 @@
     "permissions": [
         "storage"
     ],
+    "content_scripts": [
+        {
+            "js": [
+                "src/background.ts"
+            ],
+            "matches": [
+                "https://cc-cedict.org/*"
+            ]
+        }
+    ],
     "chrome_url_overrides": {
         "newtab": "src/new-tab/index.html"
     }
